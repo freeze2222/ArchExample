@@ -28,7 +28,10 @@ fun MainScreen() {
     Surface(
         color = MaterialTheme.colorScheme.background
     ) {
-        Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             when (state.value.isLoading) {
                 true -> {
                     CircularProgressIndicator(modifier = Modifier.fillMaxSize())
@@ -55,13 +58,9 @@ fun MainScreen() {
 
 @Composable
 fun MainScreenContent(data: ImageData?) {
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        AsyncImage(
-            data?.image,
-            contentDescription = null,
-            contentScale = ContentScale.FillBounds
-        )
-    }
+    AsyncImage(
+        data?.image,
+        contentDescription = null,
+        contentScale = ContentScale.FillBounds
+    )
 }
