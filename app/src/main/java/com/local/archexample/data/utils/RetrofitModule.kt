@@ -1,6 +1,5 @@
-package com.local.archexample.di
+package com.local.archexample.data.utils
 
-import com.local.archexample.data.utils.MediationApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,11 +13,11 @@ import javax.inject.Singleton
 object RetrofitModule {
     @Provides
     @Singleton
-    fun provideRetrofit(): MediationApi {
+    fun provideRetrofit(): ExampleApi {
         return Retrofit.Builder()
             .baseUrl("https://randomfox.ca")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(MediationApi::class.java)
+            .create(ExampleApi::class.java)
     }
 }

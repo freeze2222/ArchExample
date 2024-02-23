@@ -1,7 +1,7 @@
 package com.local.archexample.domain.repository
 
 import com.local.archexample.data.models.ImageData
-import com.local.archexample.di.RetrofitModule
+import com.local.archexample.data.utils.RetrofitModule
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

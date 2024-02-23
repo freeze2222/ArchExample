@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.local.mediation2"
+    namespace = "com.local.archexample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.local.mediation2"
+        applicationId = "com.local.archexample"
         minSdk = 25
         targetSdk = 34
         versionCode = 1

@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Mediation2"
+rootProject.name = "ArchExample"
 include(":app")
  
